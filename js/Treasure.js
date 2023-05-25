@@ -28,13 +28,11 @@ AFRAME.registerComponent("coins", {
       dur: 1000,
     });
 
-    //set the static body attribute of physics system
     coinEl.setAttribute("static-body", {
       shape: "sphere",
       sphereRadius: 2
     });
 
-    //set the game play attribute
     coinEl.setAttribute("game-play", {
       elementId: `#${id}`,
     });
